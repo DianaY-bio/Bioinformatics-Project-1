@@ -1,0 +1,63 @@
+/work/UGE/8.6.4/n6361/job_scripts/8264709: line 13: module: command not found
+Using GATK jar /u/local/apps/gatk/4.6.0.0/gatk-package-4.6.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /u/local/apps/gatk/4.6.0.0/gatk-package-4.6.0.0-local.jar GenotypeGVCFs -R /u/home/y/yenokyan/Bioinformatics-Project-1/UU_Cfam_GSD_1.0_ROSY.fa -V gendb:///u/home/y/yenokyan/Bioinformatics-Project-1/dogs_db -O /u/home/y/yenokyan/Bioinformatics-Project-1/chr1_sample.vcf.gz
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" java.lang.UnsupportedClassVersionError: org/broadinstitute/hellbender/Main has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:621)
+Using GATK jar /u/local/apps/gatk/4.6.0.0/gatk-package-4.6.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /u/local/apps/gatk/4.6.0.0/gatk-package-4.6.0.0-local.jar GenotypeGVCFs -R /u/home/y/yenokyan/Bioinformatics-Project-1/UU_Cfam_GSD_1.0_ROSY.fa -V gendb:///u/home/y/yenokyan/Bioinformatics-Project-1/dogs_db -O /u/home/y/yenokyan/Bioinformatics-Project-1/chr1_sample.vcf.gz
+17:44:43.791 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/u/local/apps/gatk/4.6.0.0/gatk-package-4.6.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+17:44:44.058 INFO  GenotypeGVCFs - ------------------------------------------------------------
+17:44:44.061 INFO  GenotypeGVCFs - The Genome Analysis Toolkit (GATK) v4.6.0.0
+17:44:44.061 INFO  GenotypeGVCFs - For support and documentation go to https://software.broadinstitute.org/gatk/
+17:44:44.061 INFO  GenotypeGVCFs - Executing as yenokyan@n6361 on Linux v3.10.0-1160.108.1.el7.x86_64 amd64
+17:44:44.062 INFO  GenotypeGVCFs - Java runtime: Java HotSpot(TM) 64-Bit Server VM v17.0.12+8-LTS-286
+17:44:44.062 INFO  GenotypeGVCFs - Start Date/Time: April 14, 2025 at 5:44:43 PM PDT
+17:44:44.062 INFO  GenotypeGVCFs - ------------------------------------------------------------
+17:44:44.062 INFO  GenotypeGVCFs - ------------------------------------------------------------
+17:44:44.063 INFO  GenotypeGVCFs - HTSJDK Version: 4.1.1
+17:44:44.063 INFO  GenotypeGVCFs - Picard Version: 3.2.0
+17:44:44.063 INFO  GenotypeGVCFs - Built for Spark Version: 3.5.0
+17:44:44.063 INFO  GenotypeGVCFs - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+17:44:44.064 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+17:44:44.064 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+17:44:44.064 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+17:44:44.064 INFO  GenotypeGVCFs - Deflater: IntelDeflater
+17:44:44.065 INFO  GenotypeGVCFs - Inflater: IntelInflater
+17:44:44.065 INFO  GenotypeGVCFs - GCS max retries/reopens: 20
+17:44:44.065 INFO  GenotypeGVCFs - Requester pays: disabled
+17:44:44.065 INFO  GenotypeGVCFs - Initializing engine
+17:44:44.626 INFO  GenomicsDBLibLoader - GenomicsDB native library version : 1.5.3-b586a26
+17:44:44.829 INFO  NativeGenomicsDB - pid=18346 tid=18347 No valid combination operation found for INFO field InbreedingCoeff  - the field will NOT be part of INFO fields in the generated VCF records
+17:44:44.829 INFO  NativeGenomicsDB - pid=18346 tid=18347 No valid combination operation found for INFO field MLEAC  - the field will NOT be part of INFO fields in the generated VCF records
+17:44:44.829 INFO  NativeGenomicsDB - pid=18346 tid=18347 No valid combination operation found for INFO field MLEAF  - the field will NOT be part of INFO fields in the generated VCF records
+17:44:45.011 INFO  GenotypeGVCFs - Done initializing engine
+17:44:45.084 INFO  ProgressMeter - Starting traversal
+17:44:45.085 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+17:45:16.264 WARN  InbreedingCoeff - InbreedingCoeff will not be calculated at position chr1:60741 and possibly subsequent; at least 10 samples must have called genotypes
+17:45:16.466 INFO  ProgressMeter -          chr1:168687              0.5                  1000           1912.0
+17:45:26.539 INFO  ProgressMeter -        chr1:21239309              0.7                303000         438579.6
+17:45:36.564 INFO  ProgressMeter -        chr1:43934948              0.9                617000         719170.1
+17:45:46.617 INFO  ProgressMeter -        chr1:55725602              1.0                787000         767405.6
+17:45:56.683 INFO  ProgressMeter -        chr1:79563795              1.2               1128000         945277.8
+17:46:09.223 INFO  ProgressMeter -        chr1:98015424              1.4               1402000         999797.9
+GENOMICSDB_TIMER,GenomicsDB iterator next() timer,Wall-clock time(s),38.87410249299767,Cpu time(s),27.948967023005025
+17:46:18.336 INFO  ProgressMeter -       chr1:123513695              1.6               1805657        1161804.4
+17:46:18.337 INFO  ProgressMeter - Traversal complete. Processed 1805657 total variants in 1.6 minutes.
+17:46:18.361 INFO  GenotypeGVCFs - Shutting down engine
+[April 14, 2025 at 5:46:18 PM PDT] org.broadinstitute.hellbender.tools.walkers.GenotypeGVCFs done. Elapsed time: 1.58 minutes.
+Runtime.totalMemory()=629145600
